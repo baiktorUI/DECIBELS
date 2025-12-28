@@ -1,0 +1,313 @@
+/* Estilos para TeamSetup */
+.setup-container {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  padding: 60px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.setup-title {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #FFD700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.setup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.team-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.team-label {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.team-input {
+  padding: 16px 20px;
+  font-size: 24px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.1);
+  border: 3px solid;
+  border-radius: 12px;
+  color: #ffffff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.team-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.team-input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.02);
+}
+
+.start-button {
+  margin-top: 20px;
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #6DFF6A, #4CAF50);
+  border: none;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(109, 255, 106, 0.4);
+}
+
+.start-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(109, 255, 106, 0.6);
+}
+
+.start-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos para DecibelMeter */
+.meter-container {
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.team-indicator {
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.team-indicator-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.team-name-display {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  padding: 20px;
+  text-align: center;
+}
+
+.team-name {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.decibel-display {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.decibel-value {
+  font-size: 120px;
+  font-weight: bold;
+  color: #6DFF6A;
+  text-shadow: 0 0 20px rgba(109, 255, 106, 0.5);
+  line-height: 1;
+}
+
+.decibel-unit {
+  font-size: 48px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.time-progress-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.time-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #6DFF6A, #4CAF50);
+  transition: width 0.1s linear;
+  box-shadow: 0 0 10px rgba(109, 255, 106, 0.5);
+}
+
+.graph-container {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  padding: 20px;
+  height: 240px;
+}
+
+.stats-container {
+  display: flex;
+  gap: 20px;
+}
+
+.stat-box {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Estilos para Results */
+.results-container {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  padding: 50px;
+  width: 90%;
+  max-width: 700px;
+}
+
+.results-title {
+  font-size: 56px;
+  font-weight: bold;
+  text-align: center;
+  color: #FFD700;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.winner-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.draw-message {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.trophy {
+  font-size: 100px;
+  margin-bottom: 20px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.winner-name {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.winner-score {
+  font-size: 64px;
+  font-weight: bold;
+  color: #6DFF6A;
+  text-shadow: 0 0 20px rgba(109, 255, 106, 0.5);
+}
+
+.results-divider {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 30px 0;
+}
+
+.results-table {
+  margin-bottom: 40px;
+}
+
+.results-header {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.result-row {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  gap: 20px;
+}
+
+.result-position {
+  font-size: 36px;
+  width: 50px;
+  text-align: center;
+}
+
+.result-team-name {
+  flex: 1;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.result-score {
+  font-size: 32px;
+  font-weight: bold;
+  color: #6DFF6A;
+  min-width: 120px;
+  text-align: right;
+}
+
+.reset-button {
+  width: 100%;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #E94E18, #c73d14);
+  border: none;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(233, 78, 24, 0.4);
+}
+
+.reset-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(233, 78, 24, 0.6);
+}
